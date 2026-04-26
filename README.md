@@ -55,7 +55,8 @@ pkg install git -y
 pkg install nodejs -y
 pkg install ffmpeg -y
 pkg install imagemagick -y
-termux-setup-storage 
+termux-setup-storage
+cd /sdcard
 git clone https://github.com/ArdikaOfc/Haruka-Botcase
 cd Haruka-Botcase
 npm install
