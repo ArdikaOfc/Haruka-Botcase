@@ -1,0 +1,3 @@
+{
+  "ignore": ["harukadev", "node_modules", "database", "logs"]
+}
