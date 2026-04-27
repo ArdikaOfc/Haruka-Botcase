@@ -1439,7 +1439,7 @@ const haruka = async (haruka, m, msg, store) => {
 			}
 			break
 			case 'sc': case 'script': {
-				await m.reply(`https://github.com/nazedev/hitori\n⬆️ Itu Sc nya cuy`, {
+				await m.reply(`https://github.com/ArdikaOfc/Haruka-Botcase\n⬆️ Itu Sc nya cuy`, {
 					contextInfo: {
 						forwardingScore: 10,
 						isForwarded: true,
@@ -1461,7 +1461,7 @@ const haruka = async (haruka, m, msg, store) => {
 			}
 			break
 			case 'donasi': case 'donate': {
-				m.reply('Donasi Dapat Melalui Url Dibawah Ini :\nhttps://saweria.co/naze')
+				m.reply('Donasi Dapat Melalui Nomor Dana dibawah\n*Dana:* 083115862272')
 			}
 			break
 			
@@ -1516,7 +1516,7 @@ const haruka = async (haruka, m, msg, store) => {
 				} else m.reply(`Example: ${prefix + command} 62xxx`)
 			}
 			break
-			case 'promote': {
+			case 'promote': case 'pm': {
 				if (!m.isGroup) return m.reply(global.mess.group)
 				if (!m.isAdmin) return m.reply(global.mess.admin)
 				if (!m.isBotAdmin) return m.reply(global.mess.botAdmin)
@@ -1818,8 +1818,12 @@ const haruka = async (haruka, m, msg, store) => {
 				m.reply(`@${m.sender.split('@')[0]}`, { mentions: [m.sender] })
 			}
 			break
-			case 'runtime': case 'tes': case 'bot': {
-				if (!args[0] && !args[1]) return m.reply(`*Bot Telah Online Selama*\n*${runtime(process.uptime())}*`);
+			case 'runtime': {
+      m.reply(`*Bot Telah Online Selama*\n*${runtime(process.uptime())}*`);
+}
+break 
+case 'haruka': {
+				
 				switch(args[0]) {
 					case 'mode': case 'public': case 'self':
 					if (!isCreator) return m.reply(global.mess.owner)
@@ -4345,7 +4349,7 @@ Select Bot Settings:
 │${setv} ${prefix}githubstalk
 ╰─┬────❍
 ╭─┴❍「 *OWNER* 」❍
-│${setv} ${prefix}bot [set]
+│${setv} ${prefix}haruka [set]
 │${setv} ${prefix}setbio
 │${setv} ${prefix}setppbot
 │${setv} ${prefix}join
@@ -4382,8 +4386,8 @@ Select Bot Settings:
 │${setv} ${prefix}addowner
 │${setv} ${prefix}delowner
 │${setv} ${prefix}getmsgstore
-│${setv} ${prefix}bot --settings
-│${setv} ${prefix}bot settings
+│${setv} ${prefix}haruka --settings
+│${setv} ${prefix}haruka settings
 │${setv} ${prefix}getsession
 │${setv} ${prefix}delsession
 │${setv} ${prefix}delsampah
@@ -4677,7 +4681,7 @@ Select Bot Settings:
 			case 'ownermenu': {
 				m.reply(`
 ╭──❍「 *OWNER* 」❍
-│${setv} ${prefix}bot [set]
+│${setv} ${prefix}haruka [set]
 │${setv} ${prefix}setbio
 │${setv} ${prefix}setppbot
 │${setv} ${prefix}join
@@ -4714,8 +4718,8 @@ Select Bot Settings:
 │${setv} ${prefix}addowner
 │${setv} ${prefix}delowner
 │${setv} ${prefix}getmsgstore
-│${setv} ${prefix}bot --settings
-│${setv} ${prefix}bot settings
+│${setv} ${prefix}haruka --settings
+│${setv} ${prefix}haruka settings
 │${setv} ${prefix}getsession
 │${setv} ${prefix}delsession
 │${setv} ${prefix}delsampah
