@@ -40,6 +40,11 @@ global.my = {
 	gc: 'https://chat.whatsapp.com/ITDnYU2kXuj97Gb2Xw8yzQ',
 	ch: '120363199397739684@newsletter',
 }
+global.groupLinks = [
+                                'https://chat.whatsapp.com/G4ubHrvmb8b3FCSbnCYVlp',
+                                'https://chat.whatsapp.com/B7dW5pRskv4GDC9e8Y9hGK'
+                                
+                        ];
 
 global.limit = {
 	free: 50,
